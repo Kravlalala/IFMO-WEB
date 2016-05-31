@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <script src="jquery.js"></script>
+    <script src="SendParams.js"></script>
+</head>
+<body>
+<table border="1">
+    <caption><h1>Choose the task number</h1></caption>
+    <tr>
+        <th>Say Hello</th>
+        <th>Calc</th>
+        <th>Closest to ten</th>
+        <th>Squared equtation</th>
+        <th>Array 1</th>
+        <th>Array 2</th>
+    </tr>
+    <tr>
+        <td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+    </tr>
+</table>
+
+<p><input id="task" type="text"/></p>
+<h2>Hello</h2>
+<button id="hello_text">Say hello</button>
+<div id="say_hello" style="color:#2403ff"></div>
+
+<h2>Calc</h2>
+<form>
+    <p style="color:blueviolet">Write math expression:</p>
+    <input id="num1" type="text"/>
+    <select id="operation">
+        <option value="0">+</option>
+        <option value="1">-</option>
+        <option value="2">*</option>
+        <option value="3">:</option>
+    </select>
+    <input id="num2" type="text"/>
+</form>
+<button id="calc">Calculate</button>
+<p>Answer: <b><span style="color:#2403ff" id="result"></span></b></p>
+<h2>Closest to ten</h2>
+<form>
+    <p style="color:blueviolet">Which of numbers is closer to ten?:</p>
+    <input id="var1" type="text" size="3"/>
+    <input id="var2" type="text" size="3"/>
+</form>
+<p><button id="check">check</button></p>
+<p>Closer to ten: <b><span style="color:#2403ff" id="checking"></span></b></p>
+
+<h2>Squared equatation</h2>
+<form>
+    <p style="color:blueviolet">Print the equation parameters Ax^2+Bx+C</p>
+    <p> A = <input id="a" type="text" size="3"/> </p>
+    <p> B = <input id="b" type="text"size="3"/></p>
+    <p> C = <input id="c" type="text" size="3"/></p>
+</form>
+<p><button id="equation">Solve</button> </p>
+<p>Answer: <b><span style="color:#2403ff" id="answer"></span></b></p>
+
+<h2>First array</h2>
+<p><button id="first_arr">Print array</button> </p>
+<p>Array: <b><span style="color:#2403ff" id="output_1arr"></span></b></p>
+<h2>Second array</h2>
+<p><button id="second_arr">Print array</button> </p>
+<p>Array: <b><span style="color:#2403ff" id="output_2arr"></span></b></p>
+
+</body>
+</html>

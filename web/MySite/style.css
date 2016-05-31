@@ -1,0 +1,12 @@
+@import "css/bootstrap.css";
+@import "css/bootstrap.min.css";
+@import "css/bootstrap-responsive.css";
+@import "css/bootstrap-responsive.min.css";
+ html {
+     background-image: url('http://yoursite/i/tile.jpg');
+     background-repeat: repeat;
+ }
+
+ .body {
+     background-color: transparent;
+ }
