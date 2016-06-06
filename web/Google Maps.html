@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siberia</title>
+    <style>
+        #googleMap {
+            height: 570px;
+            width: 960px;
+            margin-left: 170px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var myLatlng=new google.maps.LatLng(51.719159, 100.597519)
+            var mapProp = {
+                center: myLatlng ,
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position : myLatlng,
+                map : map,
+                title : 'Мунку-Сардык'
+            });
+            var contentString = '<div id="content">'
+                    + '<h1 id="firstHeading" class="firstHeading">Мунку-Сардык</h1>'
+                    + '<div id="bodyContent">'
+                    + '<div id="picture"> <img src="https://goo.gl/58x8re" width="500"></div>'
+                    + '<p>Мунку́-Сарды́к — высочайшая вершина Саян, высота 3491 м. <a href="https://goo.gl/mlTFgM">Википедия</a>'
+                    + '<p> <b> Высота над уровнем моря: </b> 3491 м.</p>'
+                    + '<p> <b> Горный хребет: </b>Саяны</p>'
+                    + '<p> <b> Первое восхождение: </b>1858 г.</p>'
+                    + '</div>' + '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content : contentString
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+<div id="googleMap" ></div>
+</body>
+</html>>
