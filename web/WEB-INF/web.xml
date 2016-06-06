@@ -7,8 +7,16 @@
         <servlet-name>FormReading</servlet-name>
         <servlet-class>Servletes.FormReading</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Validation</servlet-name>
+        <servlet-class>Servletes.Validation</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>FormReading</servlet-name>
         <url-pattern>/FormReading</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Validation</servlet-name>
+        <url-pattern>/Validation</url-pattern>
     </servlet-mapping>
 </web-app>
