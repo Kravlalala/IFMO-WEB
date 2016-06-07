@@ -1,7 +1,7 @@
-@import "css/bootstrap.css";
-@import "css/bootstrap.min.css";
-@import "css/bootstrap-responsive.css";
-@import "css/bootstrap-responsive.min.css";
+@import "../include/css/bootstrap.css";
+@import "../include/css/bootstrap.min.css";
+@import "../include/css/bootstrap-responsive.css";
+@import "../include/css/bootstrap-responsive.min.css";
  html {
      background-image: url('http://yoursite/i/tile.jpg');
      background-repeat: repeat;

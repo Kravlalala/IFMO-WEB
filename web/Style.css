@@ -1,0 +1,27 @@
+@import "include/css/bootstrap.css";
+@import "include/css/bootstrap.min.css";
+@import "include/css/bootstrap-responsive.css";
+@import "include/css/bootstrap-responsive.min.css";
+body {
+    background-image: url('resourses/texture2.jpg');
+    background-repeat: no-repeat;
+}
+.font_color {
+    color: #5c6367; /* Цвет символа */
+}
+#googleMap {
+    height: 570px;
+    width: 960px;
+    margin-left: 170px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#googleMap {
+    height: 570px;
+    width: 960px;
+    margin-left: 170px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+

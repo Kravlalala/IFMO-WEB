@@ -4,6 +4,7 @@
       <root url="file://$APPLICATION_HOME_DIR$/appengine-java-sdk-1.9.36/lib/user" />
       <root url="file://$APPLICATION_HOME_DIR$/appengine-java-sdk-1.9.36/lib/opt/user/appengine-endpoints/v1" />
       <root url="file://$APPLICATION_HOME_DIR$/appengine-java-sdk-1.9.36/lib/opt/user/jsr107/v1" />
+      <root url="jar://$PROJECT_DIR$/opencsv-3.8.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
